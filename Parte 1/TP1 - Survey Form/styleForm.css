@@ -1,0 +1,80 @@
+
+
+/* HEADER */
+header {
+
+    text-align: center;
+    border-style: dotted;
+    margin: 20px 350px 20px;
+    
+}
+
+h1, h3 {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+
+    background-color: #5C9E7C;
+    
+}
+
+
+/* ******************************************************************************* */
+
+
+
+/* CAMPOS FORMULARIO */
+
+label {
+
+    padding: 15px 30px 15px;      
+    display: block;             /* todos los label ahora se comportan en bloque - cada label es un campo del form */
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left; 
+    font-size: large;
+}
+
+input {
+
+    margin-top: 6px;           /* Separacion entre el input y el label dentro de la etiqueta */
+
+}
+
+select {
+
+    margin-top: 5px;
+    padding: 1px;
+}
+
+textarea {
+
+    margin-top: 5px;
+    padding: 1px;
+}
+
+#submit {
+
+    margin-top: -30px;
+
+}
+
+/* CAJA FORMULARIO */
+
+#cajaForm {
+
+    margin: 10px 300px 10px;
+    padding: 30px 20px 30px;
+    border-style: solid;
+    background-color: #CCF3DF;
+}
+
+
+.chek {
+
+    display: inline-block;
+    padding-top: 2px;
+
+}

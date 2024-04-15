@@ -1,0 +1,104 @@
+/* CSS Markers */
+
+/* 4 formas de dar prop de color: keywords, hex, rgb, or hsl */
+/* Each red, green, and blue value is a number from 0 to 255 */
+
+/* A color wheel is a circle where similar colors, or hues, are near each other, 
+and different ones are further apart. Two colors that are opposite from each other 
+on the color wheel are called complementary colors. */
+
+/* The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, 
+a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness. */
+
+h1 {
+
+    text-align: center;
+}
+
+.marker {
+
+    /* Un div por si no tiene grosor ni nada, pero si se lo damos aparece este bloque */
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;   /* Centra el margin de los 4 lados, con 10 px cada lado */
+}
+
+/****** Y ACA MODIFICAMOS EL DIV A GUSTO: */
+
+.red {          /* 2a Clase de un div, marker red*/
+
+    /* Linear gradient crea una transicion entre dos colores o mas / El grado es la direccion
+
+    Color Stop es el % que ocupa cada color, de la forma: .., rgb(162, 27, 27) 100%, ..
+    Automaticamente, el primer color es (0%), el segundo (50%), y el ultimo (100%) del gradiente 
+   
+    Por defecto, si no especificamos direccion (grados), por defecto va de arriba a abajo (180*) */
+    background: linear-gradient(180deg, rgb(122, 74, 14), rgb(245, 62, 113) , rgb(162, 27, 27));
+
+
+    /* box-shadow property lets you apply one or more shadows around an element */
+    /* añade como una sombra de color, 5px a la derecha y 5px abajo, -5px izquierda y -5px arriba (ejes X e Y) */
+    box-shadow: 0px 0px 20px 0 rgba(83, 14, 14, 0.8);
+    /* El tercer argumento es blurRadious, el cual difumina el shadow */
+    /* El cuarto argumento es spreadRadious, amplia el cuadro de shadow (poner en 0 los dos primeros para centrar */
+    /* 0 no necesita valor (px) */
+}
+
+.green { 
+
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+
+
+.container {
+
+    background-color: rgb(255, 255, 255);
+
+    padding: 10px 0;
+    /* Aplica todo esto:  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    */
+
+}
+
+.sleeve {
+
+    width: 110px;
+    height: 25px;
+    background-color: white;
+
+    /* Opacity describes how opaque, or non-transparent, something is; 
+    With the value 0, or 0%, the element will be completely transparent, and at 1.0, or 100% */
+    opacity: 0.5; /* A la mitad */ 
+  
+
+    /* El rgba funciona como el rgb, pero toma un nro del 0 al 1.0 for the alpha channel:
+
+    background-color: rgba(255, 255, 255, 0.5);         */ 
+
+    /* The border-left shorthand property lets you to set 
+    the left border's width, style, and color at the same time.*/
+    border-left: 10px double black;
+    /* solid vs double */
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve {
+
+    display: inline-block;
+  
+  }
+

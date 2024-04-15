@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<!-- Indicamos el idioma de la pagina -->
+
+<html lang="en">
+
+    <head>
+        <title>CatPhotoApp</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!-- Indentacion -->
+        <main>      <!-- DIV de Seccion principal -->
+
+        <!-- This is called nesting - Putting tags between tags --> 
+
+        <h1>CatPhotoApp</h1>
+
+        <!-- Primera Section -->
+        <section>
+            <h2>Cat Photos</h2>                                     
+
+            <!-- Incluimos un link dentro de un parrafo, y usamos palabras del parrafo para esto -->
+            <p>See more <a href="https://freecatphotoapp.com" alt="A cute orange cat lying on its back.">cat photos</a> in our gallery.</p>   
+
+            <!-- Propiedad alt, ver que hace-->
+            <!-- LINK en una foto -->
+            <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" 
+            alt="A cute orange cat lying on its back."></a>
+        </section>
+
+        <!-- Segunda Section -->
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+
+            <!-- Ver que hace figure, es para multimedia. Ademas, el figcaption es como un pie de foto -->
+            <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+            <figcaption>Cats <em>love</em> lasagna.</figcaption>
+            </figure>
+
+            <h3>Top 3 things cats hate:</h3>
+
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+
+            <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption> <!-- STRONG recalca palabras-->
+            </figure>
+        </section>
+        
+        <!-- Tercera Section -->
+        <section>
+            <h2>Cat Form</h2>
+
+            <!-- Con el action le indicamos la ruta donde enviar los datos del formulario (como href o src)-->
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+
+                <!-- El elemento fieldset agrupa inputs que esten relacionados y los encierra en una caja -->
+                <fieldset>
+                    <!-- Elemento legend agrega un titulo al form, en el cuadro de fieldset-->
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+
+                    <!-- El elemento label se encarga de enlazarse con un input para generar interaccion,
+                    en este caso, apretando en el texto de indoor se va a marcar el cuadrado del input que tenga la misma id.
+                    esta debe ser unica-->
+                    <label id="indoor">
+                    <!-- Agrega un boton clickeable de una unica opcion ( O: Papas Fritas ) -->
+                    <input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor
+                    </label>
+    
+                    <label>
+                    <!-- El atributo name con la comparacion indoor-outdoor se encarga de que se pueda seleccionar 
+                    solo uno; deselecciona el ultimo si intentamos clickear los dos -->
+                    <input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor
+                    <!-- El atributo value = "mismo que id (outdoor)" evita que se manden ambas opciones como marcadas,
+                    solo manda la que seleccionemos - fundamental -->
+                    </label>
+                </fieldset>
+
+                <!-- -->
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+
+                    <!-- Type CHECKBOX, el cual da varias opciones para marcar -->
+                    <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving"> Loving </label>
+                    <!-- El atributo CHECKED marca por defecto la opcion que lo porte -->
+
+                    <!-- TYPE da tipo, id referencia input, name se lo asignamos tip clase, for referencia label -->
+                    <input type="checkbox" id="lazy" name="personality" value="lazy"> <label for="lazy"> Lazy </label>
+
+                    <!-- Lesson Inputs: 55 - 60 -->
+                    <input type="checkbox" id="energetic" name="personality" value="energetic"> <label for="energetic"> Energetic </label>
+
+                </fieldset>
+
+
+                <!-- El elemento input inserta un campo donde introducir informacion desde el teclado -->
+                <!-- El atributo type es fundamental para input, indica el tipo de dato que va recibir --> 
+                <!-- El atributo name es un tipo identificador para el servidor (name) de nombre asignable por el usuario -->
+                <!-- El atributo placeholder muestra en el campo que tipo de informacion debe ir (letras grises)-->
+                <input type="text" name="catphotourl" placeholder="Email Adress" required/>
+                <!-- El atriburo REQUIRED se encarga de que este campo sea rellenado si o si por el usuario. No requiere un valor -->
+
+                <!-- Elemento que genera un boton clickeable con el nombre que queramos, como Submit; aparece al lado -->
+                <!-- El atributo type en este caso indica que es un boton de submit, para enviar todo sin errores -->
+                <button type="submit">Submit</button>
+            </form>
+
+        </section>
+
+
+        </main>
+
+    </body>
+
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+</html>

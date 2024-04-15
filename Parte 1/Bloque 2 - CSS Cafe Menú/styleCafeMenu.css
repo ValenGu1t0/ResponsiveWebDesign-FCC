@@ -1,0 +1,137 @@
+
+
+/*** Selector de tipo ***/
+p {
+    text-align: center;                 /* Alinea al centro */
+}
+
+h1 { 
+
+    text-align: center;
+
+    /* Cambia fuente char / Atributo serif encuentra los char que no carguen - fallback value */ 
+    font-family: Impact, serif;
+
+    /* Aumenta el tamaño del char */
+    font-size:40px;
+
+    margin-top: 0px;        /* espacio vertical */
+    margin-bottom: 15px;
+}
+
+h2 {
+
+    text-align: center;
+
+    /* Cambia fuente char / Atributo serif encuentra los char que no carguen - fallback value */ 
+    font-family: Impact, serif;
+
+    /* Aumenta el tamaño del char */
+    font-size:40px;
+
+}
+
+body {
+
+    /*  Cambia el fondo del elemento con la imagen que le indiquemos */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+
+    font-family: sans-serif;
+
+    padding: 20px;
+}
+
+hr {
+
+    height: 2px;                    /* Alto del elemento */
+    background-color: brown;
+
+    /* Cambia el color del borde -- Chequear px si comparte color con el background */
+    border-color: brown;
+}
+
+img {
+
+    display: block;
+    margin-left: auto;  /* se alinean al centro */
+    margin-right: auto; 
+    margin-top: -25px;
+}
+
+footer {
+
+    font-size: 14px;
+}
+
+a {
+    color: black;
+}
+
+/* Pseudoselector para cuando el link haya sido visitado, se ponga en gris */
+a:visited { color: black; }
+
+/* Cambia el color del link cuando el cursor se posa sobre el */
+a:hover { color: brown; }
+
+/* Cambia el color del link cuando el cursor lo clickea */
+a:active { color: brown; }
+
+
+
+/* Selector de Clases */
+.menu {       
+
+    /* Porcentaje del elemento - Ocupa el 80 del body */
+    width: 80%;                             
+    background-color: burlywood;
+
+    /* Establece el grosor del margen de los elementos automaticamente */
+    margin-left: auto;          
+    margin-right: auto;         
+
+    /* Establece el area de relleno -- Espacio (separacion) entre el contenido y su borde  */
+    padding: 20px;       /* Si no se indica el lado, se aplica a los 4 */  
+    
+    
+    /* Limita el ancho del elemento */
+    max-width: 500px;
+}
+
+/* Selector de ciertos elementos de una clase, osea p */
+.item p {
+
+    /* Pone los elementos de esa clase en linea recta */
+    display: inline-block; 
+
+    margin-top: 5px;        /* Que haya un margen de 5px entre cada item arriba y abajo */
+    margin-bottom: 5px;  
+    
+    font-size: 18px;
+}
+
+/* Agregamos mas de una clase a los mismos atributos */
+.flavor, .dessert {             
+    text-align: left;           /* Alinea a la izquierda el texto */ 
+    width: 49%;                 /* Porcentaje que ocupa ese elemento en esa linea? */
+}
+
+.price {
+    text-align: right;
+    width: 49%;
+}
+
+.established {
+
+    /* Cursiva */
+    font-family: italic;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+.adress {
+
+    margin-bottom: 5px;
+
+}
