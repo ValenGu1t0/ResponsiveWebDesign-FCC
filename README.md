@@ -1,3 +1,3 @@
-En este repositorio guardo mis practicas hechas en el curso de Responsive Web Design de FreeCodeCamp.org.
+En este repositorio guardo mis proyectos hechos en el curso de Responsive Web Design de FreeCodeCamp.org. Gracias a este curso, aprendi de manera autodidacta a escribir codigo HTML y CSS de una manera eficiente, clara y precisa, para lograr crear mejores paginas web, mucho mas bonitas y llamativas, haciendo de la experiencia de usuario algo unico, mediante el uso de buenas practicas responsive. 
 
-In this repository, I store my practices done in the Responsive Web Design course from FreeCodeCamp.org.
+In this repository, I store my projects from the Responsive Web Design course by FreeCodeCamp.org. Through this course, I learned to write HTML and CSS code in an efficient, clear way, allowing me to create better and more visually appealing websites in order to make the user experience something unique, by using best practices in responsive web design.
