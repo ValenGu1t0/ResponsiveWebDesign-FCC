@@ -1,0 +1,239 @@
+
+/* ////////////////////////////////////////////////////////// GLOBAL //////////////////////////////////////////////////////////////*/
+
+* {
+
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+
+    color: #003285;
+}
+
+body {
+
+    background-color: #CAF4FF;
+}
+
+
+/* ////////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////////////*/
+
+header {
+
+    margin-bottom: 10px;
+    padding: 50px 40px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Me los acomoda en la caja a partes iguales */
+
+    position: relative;
+    top: -30px;
+
+    border: 2px solid black;
+    border-radius: 0 0 30px 30px;
+    background-color: #003285;
+}
+
+/* logo de consec en header */
+#logo {
+
+    /* Ver relacion de tamaño del png, en este caso era 950 x 100 */
+    width: 210px;
+    height: 68px;
+}
+
+.botonheader {
+
+    width: 15%;
+
+
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: #5AB2FF;
+
+    /* Fue CENTRADO manualmente.. */
+    padding: 20px 5px;
+    text-align: center;
+    
+}
+
+.botonheader a {
+
+    height: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* //////////////////////////// CURSOR HEADER //////////////////////////// */
+
+.botonheader a:link {
+
+    text-decoration: none;
+    color: black;
+}
+
+.botonheader a:visited {
+
+    text-decoration: none;
+    color: black;
+}
+
+.botonheader:hover {
+
+    text-decoration: none;
+    background-color: #3da9fc;
+}
+
+.botonheader a:active {
+
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////// NAVEGADOR //////////////////////////////////////////////////////////////*/
+
+/* Toda la barra de navegacion, parte SERVICIOS  */
+#navbar {
+
+    height: 100%;
+    width: 20%;
+    padding-bottom: 25px;
+    margin-left: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    position: sticky;
+    top: 90px;
+    left: 0;
+
+    background-color: #5AB2FF;
+    border: 2px solid black; 
+    border-radius: 30px;
+    
+}
+
+
+/* Caja del boton del nav */
+.boton-nav {
+
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Selector para el texto del boton */
+.boton-nav a {
+
+    text-decoration: none;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+
+/* //////////////////////////// CURSOR NAVEGADOR //////////////////////////// */
+
+.boton-nav a:link {
+
+    color: black;
+}
+
+.boton-nav a:visited {
+
+    color: black;
+}
+
+.boton-nav:hover {
+
+    color: red;
+    background-color: #3da9fc;   
+}
+
+.boton-nav:active {
+
+    color: red;
+}
+
+
+
+/* ////////////////////////////////////////////////////////// CUERPO //////////////////////////////////////////////////////////////*/
+
+
+/* Este es el body y contiene el header arriba y el nav mas el cuerpo con la info abajo, por eso column */
+body {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Este es el div que contiene el nav y el cuerpo con la info, por eso row */
+#cuerpo {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/* Este modifica el cuerpo con la informacion */
+main {
+
+    width: 80%;
+    padding: 0 30px; 
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+/* Modifica la caja de cada section dentro del main */
+.main-section {
+
+    text-align: justify;
+   
+    width: 80% auto;
+    margin-bottom: 20px;
+    
+    border: 2px solid black; 
+    border-radius: 30px;
+    padding: 5px 30px;
+
+    background-color: #5AB2FF;
+
+}
+
+
+/* Esta clase controla las cajas de 3 imagenes dentro de cada seccion */
+.ejemplosimg {
+
+    /* Disposición de las imagenes */ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+
+}
+
+.ejemplosimg img {
+
+    object-fit: cover;
+    width: 30%;
+    height: 200px;
+}
+
