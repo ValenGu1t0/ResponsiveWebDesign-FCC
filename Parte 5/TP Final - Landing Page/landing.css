@@ -1,0 +1,151 @@
+
+:root {
+    --white: #f0f0f0;
+    --red: #be3144;
+    --blue: #45567d;
+    --gray: #303841;
+    --black: #000000;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* /////////////////////////////////// NAV /////////////////////////////////// */
+
+.cajabotones {
+    
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+
+    list-style: none;
+
+    padding: 0 20px;
+    height: 4rem;
+    background-color: var(--red);
+
+}
+
+.navboton {
+
+    padding: 19.5px 30px; 
+
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navboton:link { color: var(--white); }
+
+.navboton:visited { color: var(--white); }
+
+.navboton:hover { background-color: #45567d; }
+
+.navboton:active { color: var(--white); }
+
+
+
+/* /////////////////////////////////// BODY - INTRO /////////////////////////////////// */
+
+.intro {
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 2px solid var(--black);;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.intro h1 { color: var(--white); }
+
+.intro p { color: var(--red); }
+
+
+/* /////////////////////////////////// BODY - PROYECTOS /////////////////////////////////// */
+
+.proyectos {
+
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--blue);
+    width: 100%;
+}
+
+.proyectos h2 {
+
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.cuadroProyectos {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgs {
+
+    width: 400px;
+    height: 330px;
+
+    border: 2px solid var(--black);
+    border-radius: 25px;
+}
+
+/* /////////////////////////////////// FOOTER - CONTACTO /////////////////////////////////// */
+
+.contacto {
+
+    background-color: var(--gray);
+
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.contacto h2 {
+
+    color: var(--white);
+}
+
+.botonescontacto {
+
+    padding: 2rem;
+}
+
+.botoncontacto {
+
+    color: var(--white);
+    text-decoration: none;
+    text-shadow: 2px 2px 1px #1f1f1f;
+
+    margin: 2rem;
+    
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.botoncontacto:visited {
+
+    color: var(--white);
+}
